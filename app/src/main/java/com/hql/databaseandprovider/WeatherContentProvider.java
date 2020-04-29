@@ -19,9 +19,9 @@ import android.util.Log;
 public class WeatherContentProvider extends ContentProvider {
     private final String TAG = "Mr.H";
     private static final String AUTHORITIES = "com.hql.provider";
-    private static final String PATH = "com.szlanyou.os.service.weatherdb";
+    private static final String PATH = "com.hql.test.service.weatherdb";
     public static final Uri CONTENT_URI = Uri.parse("content://" + AUTHORITIES);
-    public static final Uri CONTENT_URI_TEST = Uri.parse("content://" + "com.szlanyou.os.service.weather.info.provider");
+    public static final Uri CONTENT_URI_TEST = Uri.parse("content://" + "com.hql.test.service.weather.info.provider");
     private static final UriMatcher mUriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
     private static final int URI_CODE = 1;
 
